@@ -14,3 +14,29 @@ sources:
     tables:
       - name: patients_raw
         description: Patient demographic and registry information.
+        columnns:
+          - name: patient_id
+            description: Unique identifier for each patient.
+            data_tests:
+              - unique
+              - not_null
+          - name: full_name
+            description: Full name of the patient.
+            data_tests:
+              - not_null
+          - name: date_of_birth
+            description: Date of birth of the patient.
+            data_tests:
+              - not_null
+          - name: gender
+            description: Gender of the patient.
+            data_tests:
+              - accepted_values:
+                  arguments:
+                    values: ['M', 'F']
+          - name: load_ts
+            description: Timestamp when the record was loaded into the raw table.
+            data_tests:
+              - not_null
+               
+

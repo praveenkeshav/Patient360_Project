@@ -28,3 +28,7 @@ models:
           - accepted_values:
               arguments:
                 values: ['Black', 'White', 'Unknown', 'Asian', 'Native Hawaiian or Other Pacific Islander', 'Other', 'Hispanic']
+      - name: age
+        description: Age of the patient calculated from date of birth
+        data_tests:
+          - not_null
