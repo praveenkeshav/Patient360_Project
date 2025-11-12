@@ -1,0 +1,30 @@
+models:
+  - name: stg_patients
+    description: Standardized patient demographic registry;
+    columns:
+      - name: patient_id
+        description: primary key for patients table
+        data_tests:
+          - unique
+          - not_null
+      - name: full_name
+        description: Concatenation of first_name and last_name
+        data_tests:
+          - not_null
+      - name: dob
+        description: date of birth of patient
+        data_tests:
+          - unique
+          - not_null
+      - name: gender
+        description: sex of the patient
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['M', 'F']
+      - name: race
+        description: "{{ doc('race') }}"
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Black', 'White', 'Unknown', 'Asian', 'Native Hawaiian or Other Pacific Islander', 'Other', 'Hispanic']

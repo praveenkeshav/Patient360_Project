@@ -1,0 +1,13 @@
+pv360:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      threads: 16
+      account: VJFDBNR-PWB86970
+      user: prvnkshv
+      database: pv360
+      warehouse: compute_wh
+      schema: dev
+      password: PKKbravosi$2025
+      role: sysadmin

@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: ehr
+    database: pv360
+    schema: raw
+    description: Raw EHR and claims data for the Patient 360 project.
+    config:
+      freshness:
+        warn_after: {count: 24, period: hour}
+        error_after: {count: 48, period: hour}
+      loaded_at_field: _etl_loaded_at
+
+    tables:
+      - name: patients_raw
+        description: Patient demographic and registry information.
