@@ -1,0 +1,14 @@
+payer_id,payer_name,payer_type,payer_code,payer_group,country,currency,is_active,coverage_start_date,coverage_end_date,notes
+P001,United HealthCare,Private,UHC001,UnitedHealth,USA,USD,TRUE,2015-01-01,,
+P002,Blue Cross Blue Shield,Private,BCBS123,Anthem,USA,USD,TRUE,2016-05-01,,
+P003,Medicare,Medicare,MCR,US Gov,USA,USD,TRUE,2010-01-01,,Federal health insurance for 65+
+P004,Medicaid,Medicaid,MCD,US Gov,USA,USD,TRUE,2012-01-01,,State-administered program
+P005,Aetna,Private,AET789,CVS Health,USA,USD,TRUE,2017-10-01,,
+P006,Cigna,Private,CIG456,Cigna Group,USA,USD,TRUE,2018-03-15,,
+P007,Self-Pay,Self-Pay,SPY,None,USA,USD,TRUE,2000-01-01,,Patients paying out of pocket
+P008,Niva Bupa,Private,NVB567,Bupa,IND,INR,TRUE,2019-09-01,,
+P009,Star Health,Private,STH321,Star Health,IND,INR,TRUE,2020-01-01,,
+P010,National Health Service,Public,NHS001,NHS,UK,GBP,TRUE,2005-04-01,,UK public healthcare
+P011,Sun Life,Private,SUN999,Sun Life,CAN,CAD,TRUE,2014-07-01,,
+P012,Medibank,Private,MED111,Medibank,AUS,AUD,TRUE,2013-06-01,,
+P013,Legacy Payer X,Private,LGX111,Legacy Group,USA,USD,FALSE,2000-01-01,2020-12-31,Deactivated payer

@@ -1,0 +1,10 @@
+loinc,test_name,ucum_unit,canonical_unit,loinc_class,specimen,property,scale,preferred_decimal_places,normal_range_low,normal_range_high,normal_range_unit,notes,source,updated_at
+4548-4,Hemoglobin A1c,%,%,Chemistry,Blood,SCnc,Qn,1,4.0,6.0,%,HbA1c typical non-diabetic range; consider clinical context,original_seed,2025-09-17T11:10:44Z
+2160-0,Creatinine,mg/dL,mg/dL,Chemistry,Serum/Plasma,MCnc,Qn,2,0.60,1.30,mg/dL,Serum creatinine normal adult ranges vary by sex/age,original_seed,2025-09-17T11:10:44Z
+48643-1,eGFR,mL/min/1.73 m2,mL/min/1.73 m2,Calculated,Blood,Rate,Qn,0,60,120,mL/min/1.73 m2,eGFR approximate normal >=60; use CKD staging logic,original_seed,2025-09-17T11:10:44Z
+30934-4,B-type natriuretic peptide,pg/mL,pg/mL,Cardiac,Blood,MCnc,Qn,0,0,100,pg/mL,BNP >100 suggestive of heart failure,original_seed,2025-09-17T11:10:44Z
+2089-1,LDL Cholesterol,mg/dL,mg/dL,Chemistry,Serum/Plasma,MCnc,Qn,1,0,100,mg/dL,LDL targets depend on risk profile,original_seed,2025-09-17T11:10:44Z
+718-7,Hemoglobin,g/dL,g/dL,Hematology,Blood,MCnc,Qn,1,12.0,17.5,g/dL,Hemoglobin normal ranges vary by sex and age,original_seed,2025-09-17T11:10:44Z
+2951-2,Sodium,mmol/L,mmol/L,Chemistry,Serum/Plasma,SCnc,Qn,0,135,145,mmol/L,Serum sodium normal range 135-145 mmol/L,original_seed,2025-09-17T11:10:44Z
+2823-3,Potassium,mmol/L,mmol/L,Chemistry,Serum/Plasma,SCnc,Qn,1,3.5,5.0,mmol/L,Serum potassium normal 3.5-5.0 mmol/L,original_seed,2025-09-17T11:10:44Z
+2345-7,Glucose,mg/dL,mg/dL,Chemistry,Serum/Plasma,MCnc,Qn,0,70,99,mg/dL,Fasting glucose normal 70-99 mg/dL,original_seed,2025-09-17T11:10:44Z

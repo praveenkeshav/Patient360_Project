@@ -1,0 +1,11 @@
+icd10cm_code,icd10cm_name,snomed_concept_id,snomed_name,map_type,source
+E11.9,Type 2 diabetes mellitus without complications,44054006,Diabetes mellitus type 2 (disorder),Exact,NLM/WHO ICD10CM-SNOMED
+J44.9,"Chronic obstructive pulmonary disease, unspecified",13645005,Chronic obstructive lung disease (disorder),Exact,NLM
+M54.5,Low back pain,279039007,Low back pain (finding),Exact,NLM
+Z00.00,General adult medical exam without abnormal findings,699134002,Routine general medical examination (procedure),Exact,NLM
+K21.9,Gastro-esophageal reflux disease without esophagitis,235595009,Gastroesophageal reflux disease (disorder),Exact,NLM
+N18.9,"Chronic kidney disease, unspecified",709044004,Chronic kidney disease (disorder),Exact,NLM
+R07.9,"Chest pain, unspecified",29857009,Chest pain (finding),Exact,NLM
+J18.9,"Pneumonia, unspecified organism",233604007,Pneumonia (disorder),Exact,NLM
+I50.9,"Heart failure, unspecified",84114007,Heart failure (disorder),Exact,NLM
+I10,Essential (primary) hypertension,59621000,Essential hypertension (disorder),Exact,NLM

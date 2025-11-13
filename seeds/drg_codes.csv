@@ -1,0 +1,23 @@
+drg_code,drg_name,drg_group,drg_severity,mdc,drg_weight,avg_los,is_surgical,drg_version,planned_readmit_exclusion,source,updated_at
+291,"Heart Failure & Shock w MCC","Heart Failure & Shock","MCC",05,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+292,"Heart Failure & Shock w CC","Heart Failure & Shock","CC",05,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+293,"Heart Failure & Shock w/o CC/MCC","Heart Failure & Shock","NONE",05,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+193,"Simple Pneumonia & Pleurisy w MCC","Simple Pneumonia & Pleurisy","MCC",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+194,"Simple Pneumonia & Pleurisy w CC","Simple Pneumonia & Pleurisy","CC",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+195,"Simple Pneumonia & Pleurisy w/o CC/MCC","Simple Pneumonia & Pleurisy","NONE",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+190,"Chronic Obstructive Pulmonary Disease w MCC","Chronic Obstructive Pulmonary Disease","MCC",17,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+191,"Chronic Obstructive Pulmonary Disease w CC","Chronic Obstructive Pulmonary Disease","CC",17,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+192,"Chronic Obstructive Pulmonary Disease w/o CC/MCC","Chronic Obstructive Pulmonary Disease","NONE",17,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+177,"Respiratory Infections & Inflammations w MCC","Respiratory Infections & Inflammations","MCC",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+178,"Respiratory Infections & Inflammations w CC","Respiratory Infections & Inflammations","CC",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+179,"Respiratory Infections & Inflammations w/o CC/MCC","Respiratory Infections & Inflammations","NONE",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+291,"Heart Failure & Shock w MCC","Heart Failure & Shock","MCC",05,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+190,"Chronic Obstructive Pulmonary Disease w MCC","Chronic Obstructive Pulmonary Disease","MCC",17,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+191,"Chronic Obstructive Pulmonary Disease w CC","Chronic Obstructive Pulmonary Disease","CC",17,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+192,"Chronic Obstructive Pulmonary Disease w/o CC/MCC","Chronic Obstructive Pulmonary Disease","NONE",17,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+177,"Respiratory Infections & Inflammations w MCC","Respiratory Infections & Inflammations","MCC",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+178,"Respiratory Infections & Inflammations w CC","Respiratory Infections & Inflammations","CC",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+179,"Respiratory Infections & Inflammations w/o CC/MCC","Respiratory Infections & Inflammations","NONE",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+193,"Simple Pneumonia & Pleurisy w MCC","Simple Pneumonia & Pleurisy","MCC",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+194,"Simple Pneumonia & Pleurisy w CC","Simple Pneumonia & Pleurisy","CC",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z
+195,"Simple Pneumonia & Pleurisy w/o CC/MCC","Simple Pneumonia & Pleurisy","NONE",04,,,,MS-DRG,False,original_seed,2025-09-17T10:33:09Z

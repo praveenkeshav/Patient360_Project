@@ -1,0 +1,9 @@
+exclusion_id,code,code_type,description,exclusion_category,reason,is_active,row_hash
+EXC_0001,470,DRG,Major Hip & Knee Joint Replacement or Reattachment,Elective surgery,Planned ortho surgery,TRUE,a0003c72953cce3721287af9433cb0872f393dfe81c2dd0a
+EXC_0002,469,DRG,Major Hip & Knee Joint Replacement or Reattachment,Elective surgery,Planned ortho surgery,TRUE,e76a4d679c9ace6b96d9fff76352234770d2891cdd2e2f
+EXC_0003,724,DRG,Specific Chemo w/o Acute Leukemia as Secondary,Planned chemo,Planned chemo,TRUE,889606a862f7d8d78dd2c555ae79b58192f87c3bcf3d1c
+EXC_0004,774,DRG,Vaginal Delivery w/o Complicating Diagnoses,Obstetrics,Obstetrics planned/exempt,TRUE,49c4ab015a731ff6cdea267cb2b754b1f97052916e03e7
+EXC_0005,45378,CPT,Diagnostic colonoscopy,Diagnostics,Frequently planned procedure,TRUE,d98b86abb292e382022eeb91dda7e010f35b196d561e03
+EXC_0006,93000,CPT,"Electrocardiogram, routine ECG",Diagnostics,Often planned/OP,TRUE,e378f7f52452d7f0b67c6b6a9ba3530623b008332fc8df
+EXC_0007,0SR90JZ,ICD10PCS,Replacement of Right Hip Joint with Synthetic Substitute,Elective surgery,Elective joint replacement,TRUE,4dae1548b8e0580b133f1a4a961328941e56ad95efc6e8
+EXC_0008,0SRB0JZ,ICD10PCS,Replacement of Left Hip Joint with Synthetic Substitute,Elective surgery,Elective joint replacement,TRUE,74be1de424d1cec2e583dfb7a21bddb857d9f07d6ca436

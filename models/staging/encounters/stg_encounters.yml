@@ -1,0 +1,54 @@
+models:
+  - name: stg_encounters
+    description: Standardized patient encounters registry
+    columns:
+      - name: encounter_id
+        description: primary key for encounters table
+        data_tests:
+          - unique
+          - not_null
+      - name: patient_id
+        description: foreign key referencing patient in stg_patients table
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_patients')
+                field: patient_id
+      - name: admit_datetime
+        description: date of and time when the patient was admitted
+        data_tests:
+          - not_null
+      - name: discharge_datetime
+        description: date and time when the patient was discharged
+        data_tests:
+          - not_null    
+      - name: encounter_type
+        description: type of the encounter (e.g., inpatient, outpatient, emergency)
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['inpatient', 'outpatient', 'emergency', 'observation']
+      - name: discharge_disposition
+        description: disposition of the patient at discharge
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['home', 'skilled_nursing_facility', 'expired', 'against_medical_advice', 'rehabilitation']
+      - name: facility_id
+        description: identifier for the healthcare facility where the encounter took place
+        data_tests:
+          - not_null      
+      - name: provider_id
+        description: identifier for the healthcare provider associated with the encounter
+        data_tests:
+          - not_null
+      - name: payer_id
+        description: identifier for the payer associated with the encounter
+        data_tests:
+          - not_null
+      - name: drg_code
+        description: diagnosis-related group code for the encounter
+    
+

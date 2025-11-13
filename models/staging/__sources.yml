@@ -38,5 +38,46 @@ sources:
             description: Timestamp when the record was loaded into the raw table.
             data_tests:
               - not_null
+      - name: encounters_raw
+        description: Patient encounter information including visit dates and types.
+        columns:
+          - name: encounter_id
+            description: Unique identifier for each encounter.
+            data_tests:
+              - unique
+              - not_null
+          - name: patient_id
+            description: Unique identifier for each patient.
+            data_tests:
+              - not_null
+              - relationships:
+                  arguments:
+                    to: ref('stg_patients')
+                    field: patient_id
+          - name: admit_datetime
+            description: Date and time when the patient was admitted.
+            data_tests:
+              - not_null
+          - name: discharge_datetime
+            description: Date and time when the patient was discharged.
+            data_tests:
+              - not_null    
+          - name: encounter_type
+            description: Type of encounter (e.g., inpatient, outpatient).
+            data_tests:
+              - accepted_values:
+                  arguments:
+                    values: ['INPATIENT', 'OUTPATIENT', 'ER', 'OBSERVATION']
+          - name: discharge_disposition
+            description: Discharge disposition of the patient.
+            data_tests:
+              - not_null
+              - accepted_values:
+                  arguments:
+                    values: ['HOME', 'SNF', 'AMA', 'REHAB', 'EXPIRED']          
+          - name: load_ts
+            description: Timestamp when the record was loaded into the raw table.
+            data_tests:
+              - not_null
                
 

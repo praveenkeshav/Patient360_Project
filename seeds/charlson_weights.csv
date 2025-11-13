@@ -1,0 +1,18 @@
+condition_group,weight,icd_codes
+Myocardial infarction,1,I21.9
+Congestive heart failure,1,I50.9
+Peripheral vascular disease,1,I73.9
+Cerebrovascular disease,1,I63.9
+Dementia,1,F03.90
+Chronic pulmonary disease,1,J44.9
+Connective tissue disease,1,M32.9
+Peptic ulcer disease,1,K25.9
+Mild liver disease,1,K73.9
+Diabetes w/o complication,1,E11.9
+Hemiplegia or paraplegia,2,G81.90
+Moderate/severe renal disease,2,N18.9
+Diabetes w/ chronic complication,2,E11.22
+Any malignancy (non-metastatic),2,C34.90
+Moderate/severe liver disease,3,K74.60
+Metastatic solid tumor,6,C79.9
+AIDS/HIV,6,B20

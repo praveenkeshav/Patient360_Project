@@ -1,0 +1,7 @@
+procedure_code,code_system,short_description,long_description,procedure_category,procedure_group,is_surgical,is_inpatient_applicable,is_outpatient_applicable,is_initial_visit,is_planned_exclusion,default_place_of_service,default_cost_estimate,rvu,source,updated_at
+99213,CPT,"Office/outpatient visit, est",,E&M,,False,False,True,False,False,,,,original_seed,2025-09-17T10:24:01.447338
+99214,CPT,"Office/outpatient visit, mod complexity",,E&M,,False,False,True,False,False,,,,original_seed,2025-09-17T10:24:01.447338
+71020,CPT,Chest X-ray,,Imaging,,False,True,True,False,False,,,,original_seed,2025-09-17T10:24:01.447338
+93000,CPT,"Electrocardiogram, routine ECG",,Cardiology,,False,True,True,False,False,,,,original_seed,2025-09-17T10:24:01.447338
+A0427,HCPCS,"Ambulance service, advanced life support",,Transport,,False,False,True,False,False,,,,original_seed,2025-09-17T10:24:01.447338
+A0428,HCPCS,"Ambulance service, basic life support",,Transport,,False,False,True,False,False,,,,original_seed,2025-09-17T10:24:01.447338

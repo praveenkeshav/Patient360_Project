@@ -1,0 +1,178 @@
+seeds:
+  - name: charlson_weights
+    description: This seed file contains the Charlson comorbidity index weights for various medical conditions
+    columns:
+     - name: condition_group
+       description: The medical condition associated with the Charlson comorbidity index
+       data_tests:
+         - unique
+         - not_null
+     - name: weight
+       description: The weight assigned to the medical condition in the Charlson comorbidity index
+     - name: icd_codes
+       description: The ICD-10 code corresponding to the medical condition.
+       data_tests:
+         - unique
+         - not_null
+
+  - name: drg_codes
+    description: This seed file contains Diagnosis-Related Group (DRG) codes and their descriptions
+    columns:
+     - name: drg_code
+       description: The unique code representing a specific Diagnosis-Related Group
+       data_tests:
+         - not_null
+     - name: drg_name
+       description: The name or description of the Diagnosis-Related Group
+       data_tests:
+         - not_null
+     - name: drg_group
+       description: The broader group category to which the DRG belongs
+       data_tests:
+         - not_null
+     - name: drg_severity
+       description: The severity level associated with the DRG
+     - name: mdc
+       description: Major Diagnostic Category (MDC) associated with the DRG
+
+  - name: icd_to_condition_group
+    description: This seed file maps ICD-10 codes to their corresponding condition groups for clinical classification
+    columns:
+     - name: icd_code
+       description: The ICD-10 code representing a specific medical diagnosis
+       data_tests:
+         - unique
+         - not_null
+     - name: condition_group
+       description: The condition group associated with the ICD-10 code
+       data_tests:
+         - not_null
+
+  - name: payers
+    description: This seed file contains payer information including payer IDs and names
+    columns:
+     - name: payer_id
+       description: The unique identifier for the payer
+       data_tests:
+         - unique
+         - not_null
+     - name: payer_name
+       description: The name of the payer
+       data_tests:
+         - not_null
+     - name: payer_type
+       description: The type or category of the payer (e.g., private, government)
+       data_tests:
+         - not_null
+
+  - name: planned_exclusions
+    description: Defines clinical or procedural events that should not be counted as unplanned readmissions.
+    columns:
+     - name: exclusion_id
+       description: The unique identifier for the planned exclusion event
+       data_tests:
+         - unique
+         - not_null
+     - name: code
+       description: The code representing the planned exclusion event (e.g., ICD-10 or CPT code)
+       data_tests:
+         - not_null
+     - name: code_type
+       description: The type of code used for the planned exclusion event (e.g., ICD-10, CPT)
+       data_tests:
+         - not_null    
+     - name: description
+       description: A description of the planned exclusion event
+       data_tests:
+         - not_null
+     - name: exclusion_category
+       description: The category or type of the planned exclusion event
+       data_tests:
+         - not_null
+     - name: reason
+       description: The rationale behind excluding this event from unplanned readmission calculations
+       data_tests:
+         - not_null
+
+  - name: loinc_codes
+    description: This seed file contains LOINC codes and their descriptions for laboratory and clinical observations
+    columns:
+     - name: loinc
+       description: The unique LOINC code representing a specific laboratory or clinical observation
+       data_tests:
+         - unique
+         - not_null
+     - name: test_name
+       description: The name of the laboratory or clinical test associated with the LOINC code
+       data_tests:
+         - not_null
+     -  name: ucum_unit
+        description: The UCUM (Unified Code for Units of Measure) unit associated with the LOINC code                    
+        data_tests:
+          - not_null
+     -  name: canonical_unit
+        description: The canonical unit of measurement for the LOINC code
+        data_tests:
+          - not_null
+     - name: loinc_class
+       description: The classification or category of the LOINC code
+       data_tests:
+         - not_null
+     - name: specimen
+       description: The type of specimen associated with the LOINC code (e.g., blood, urine)
+       data_tests:
+         - not_null
+     - name: property
+       description: The property or characteristic measured by the LOINC code
+       data_tests:
+         - not_null
+     - name: normal_range_low
+       description: The lower bound of the normal reference range for the LOINC code
+       data_tests:
+         - not_null
+     - name: normal_range_high
+       description: The upper bound of the normal reference range for the LOINC code
+       data_tests:
+         - not_null
+     - name: normal_range_unit
+       description: The unit of measurement for the normal reference range of the LOINC code
+       data_tests:
+         - not_null
+
+  - name: snomed_crswlk
+    description: This seed file contains a crosswalk between SNOMED CT codes and ICD-10 codes
+    columns:
+     - name: icd10cm_code
+       description: The ICD-10-CM code corresponding to the SNOMED CT code
+       data_tests:
+         - unique
+         - not_null
+     - name: icd10cm_name
+       description: The name or description of the ICD-10-CM code
+       data_tests:
+         - not_null
+     - name: snomed_concept_id
+       description: The unique SNOMED CT concept identifier
+       data_tests:
+         - unique
+         - not_null
+     - name: snomed_name
+       description: The name or description of the SNOMED CT concept
+       data_tests:
+         - not_null
+
+  - name: rxnorm_codes
+    description: This seed file contains RxNorm codes and their corresponding drug names
+    columns:
+     - name: rxcui
+       description: The unique RxNorm Concept Unique Identifier (RxCUI) for a drug
+       data_tests:
+         - unique
+         - not_null
+     - name: generic_name
+       description: The generic name of the drug associated with the RxCUI
+       data_tests:
+         - not_null
+
+  - name: cpt_hcpcs_codes
+    description: This seed file contains CPT/HCPCS codes and their descriptions for medical procedures and services
