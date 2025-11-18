@@ -32,3 +32,8 @@ models:
         description: Age of the patient calculated from date of birth
         data_tests:
           - not_null
+
+      - name: load_ts
+        description: Timestamp when the record was loaded into the staging table
+        data_tests:
+          - date_in_past
