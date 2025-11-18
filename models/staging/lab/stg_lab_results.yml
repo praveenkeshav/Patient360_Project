@@ -1,0 +1,33 @@
+models:
+  - name: stg_lab_results
+    description: "Staging table for lab results data"
+    columns:
+      - name: lab_result_id
+        description: Unique identifier for each lab result
+        data_tests:
+          - not_null
+          - unique
+      - name: patient_id
+        description: Identifier for the patient associated with the lab result
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_patients')
+                field: patient_id
+      - name: test_name
+        description: Name of the lab test performed
+        data_tests:
+          - not_null
+      - name: result_value
+        data_tests:
+          - not_null
+        description: Value/result of the lab test
+      - name: result_unit
+        description: Unit of measurement for the test value
+        data_tests:
+          - not_null
+      - name: reference_range
+        description: Normal reference range for the lab test    
+        data_tests:
+          - not_null

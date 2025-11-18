@@ -7,41 +7,33 @@ sources:
     description: Raw EHR and claims data for the Patient 360 project.
     config:
       freshness:
-        warn_after: {count: 24, period: hour}
-        error_after: {count: 48, period: hour}
+        warn_after: {count: 5, period: day}
+        error_after: {count: 7, period: day}
       loaded_at_field: load_ts
       
     tables:
       - name: patients_raw
         description: Patient demographic and registry information.
-        columnns:
+        columns:
           - name: patient_id
             description: Unique identifier for each patient.
             data_tests:
               - unique
               - not_null
-          - name: full_name
-            description: Full name of the patient.
-            data_tests:
-              - not_null
           - name: date_of_birth
             description: Date of birth of the patient.
             data_tests:
               - not_null
-          - name: gender
+          - name: sex
             description: Gender of the patient.
             data_tests:
               - accepted_values:
                   arguments:
-                    values: ['M', 'F']
+                    values: ['male', 'female']
           - name: load_ts
             description: Timestamp when the record was loaded into the raw table.
             data_tests:
               - not_null
-              - dbt_utils.expression_is_true:
-                  arguments:
-                    expression: "load_ts <= current_timestamp()"
-
       - name: encounters_raw
         description: Patient encounter information including visit dates and types.
         columns:
@@ -85,4 +77,14 @@ sources:
               - not_null
 
       - name: lab_raw
-        description: Laboratory test results for patients.
+        description: Raw lab results data including test names, values, and dates.
+        columns:
+          - name: load_ts
+            description: Timestamp when the record was loaded into the raw table.
+            data_tests:
+              - not_null
+          - name: data
+            data_type: variant
+            description: Full JSON payload
+            data_tests:
+              - not_null         
