@@ -38,6 +38,10 @@ sources:
             description: Timestamp when the record was loaded into the raw table.
             data_tests:
               - not_null
+              - dbt_utils.expression_is_true:
+                  arguments:
+                    expression: "load_ts <= current_timestamp()"
+
       - name: encounters_raw
         description: Patient encounter information including visit dates and types.
         columns:
@@ -79,5 +83,6 @@ sources:
             description: Timestamp when the record was loaded into the raw table.
             data_tests:
               - not_null
-               
 
+      - name: lab_raw
+        description: Laboratory test results for patients.
