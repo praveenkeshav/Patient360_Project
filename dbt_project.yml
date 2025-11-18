@@ -13,7 +13,7 @@ profile: 'pv360'
 # found in the "models/" directory. You probably won't need to change these!
 model-paths: ["models"]
 analysis-paths: ["analyses"]
-test-paths: ["tests"]
+test-paths: ["data-tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
@@ -24,9 +24,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 seeds:
   pv360:
-    +schema: seeds
+    +schema: seeds  
 
 models:
   pv360:
     staging:
+      +required_tests: {"unique.*|not_null": 2}
+      +required_docs: true
       +materialized: view
