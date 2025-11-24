@@ -90,3 +90,5 @@ sources:
               - not_null
       - name: diagnoses_raw
         description: Raw diagnoses data including diagnosis codes and descriptions
+      - name: medications_raw
+        description: Raw medications data including drug names, dosages, and administration dates  
