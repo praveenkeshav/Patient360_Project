@@ -87,4 +87,6 @@ sources:
             data_type: variant
             description: Full JSON payload
             data_tests:
-              - not_null         
+              - not_null
+      - name: diagnoses_raw
+        description: Raw diagnoses data including diagnosis codes and descriptions
