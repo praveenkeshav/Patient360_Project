@@ -91,4 +91,8 @@ sources:
       - name: diagnoses_raw
         description: Raw diagnoses data including diagnosis codes and descriptions
       - name: medications_raw
-        description: Raw medications data including drug names, dosages, and administration dates  
+        description: Raw medications data including drug names, dosages, and administration dates
+      - name: claims_raw
+        description: Raw claims data including billing codes and amounts
+      - name: procedures_raw
+        description: Raw procedures data including procedure codes and descriptions    
