@@ -22,7 +22,8 @@ staged as (
         --result nested object
         lab.value:result.value::float as result_value,
         lab.value:result.unit::string as result_unit,
-        lab.value:result.reference_range::string as reference_range
+        lab.value:result.reference_range::string as reference_range,
+        current_timestamp() as load_ts
 
     from source as raw,
          lateral flatten(input => raw.data:encounters) enc,
