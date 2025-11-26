@@ -16,7 +16,9 @@ staged as (
         trim(diagnosis_name) as diagnosis_name,
         upper(trim(diagnosis_type)) as diagnosis_type,
         upper(trim(present_on_admission)) as present_on_admission_raw,
-        cast(diagnosis_datetime as timestamp_ntz) as diagnosis_datetime
+        cast(diagnosis_datetime as timestamp_ntz) as diagnosis_datetime,
+        current_timestamp() as load_ts
+
     from source
 ),
 
@@ -35,7 +37,9 @@ clean as (
           else 'U'
         end as present_on_admission_flag,
         diagnosis_datetime,
-        to_date(diagnosis_datetime) as diagnosis_date
+        to_date(diagnosis_datetime) as diagnosis_date,
+        load_ts
+        
     from staged      
 ),
 
@@ -60,6 +64,8 @@ select
     present_on_admission_flag,
     diagnosis_datetime,
     diagnosis_date,
+    load_ts
+
 from dedup
 where rn =  1
 

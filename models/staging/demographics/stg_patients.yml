@@ -7,6 +7,9 @@ models:
         data_tests:
           - unique
           - not_null
+          - dbt_utils.not_null_proportion:
+              arguments:
+                at_least: 0.95
       - name: full_name
         description: Concatenation of first_name and last_name
         data_tests:
@@ -32,6 +35,9 @@ models:
         description: Age of the patient calculated from date of birth
         data_tests:
           - not_null
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: "> 20"
 
       - name: load_ts
         description: Timestamp when the record was loaded into the staging table
