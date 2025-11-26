@@ -1,0 +1,11 @@
+provider_id,provider_sk,full_name,npi,npi_valid,specialty,facility_id,is_active,source_system,source_id,record_hash,loaded_at
+PRV001,PROV_55e7516bad1e,Joshua Mathis,8172805693,TRUE,Cardiology,FAC04,TRUE,seed_upload,,68d0c2eb4b74f84a21e9b82a94dd504bd0e0d3d500ee87d0590d86d90e8822ee,2025-09-17 13:23:17
+PRV002,PROV_1f17ffaadc30,Christopher Morris,6101361609,TRUE,Internal Medicine,FAC05,TRUE,seed_upload,,612dd1f8b4cf03cac40aa66ae232f6b9b4afc6bf18dac02f53f041eeb9d9d23d,2025-09-17 13:23:17
+PRV003,PROV_141fea1de3ed,Audrey Green,8133036758,TRUE,Internal Medicine,FAC05,TRUE,seed_upload,,2822864e4b1e857ebc664e5e271e38e433c2fb39bdc219cc2d0f11575c702a29a,2025-09-17 13:23:17
+PRV004,PROV_c5b7c4587f52,Theresa Moore,1833139012,TRUE,General Surgery,FAC03,TRUE,seed_upload,,0bf7f53ee4b2d269670a73f76961999cbbe2fec3af8ac2054a022c37c7abbd47,2025-09-17 13:23:17
+PRV005,PROV_0438f78ef6a2,Amanda Decker,1974792587,TRUE,General Surgery,FAC04,TRUE,seed_upload,,080366d1d5b44206221e33f89092380c607e0aa06f04a5aefc917b8a6c5df15b,2025-09-17 13:23:17
+PRV006,PROV_a0dc95d63f91,Jennifer Cole,7515181493,TRUE,Cardiology,FAC05,TRUE,seed_upload,,4734065a1634a5cc8372ff01e57b96ea7f2b4ee9f9c52fe8ae41bdbb56ec9f9a,2025-09-17 13:23:17
+PRV007,PROV_5740304f1521,Kelsey Meyer,7466008965,TRUE,General Surgery,FAC01,TRUE,seed_upload,,3273a857e344cd5b4f6d5289d8da52b4f8ad2ed18f2f339a3ac3731d41e9cb50,2025-09-17 13:23:17
+PRV008,PROV_7f23e05c53e3,William Rivera,7311071539,TRUE,Internal Medicine,FAC03,TRUE,seed_upload,,fa64d61e1f258d7ea4be6b9b0b7adfc74c5b91a10ce40c00519df81cc7f6e37a,2025-09-17 13:23:17
+PRV009,PROV_96ef90f4f8a1,John Richard,1129801569,TRUE,Cardiology,FAC02,TRUE,seed_upload,,d8e5b0f007358b98a02f7ebc447f31c6d4f457d3b01b28c2e2c740d2aee379b5,2025-09-17 13:23:17
+PRV010,PROV_6e9058a0b8b5,Julie Phelps,6168273353,TRUE,Internal Medicine,FAC01,TRUE,seed_upload,,9f8a846adfaec110c44c92dcf888da4f4de6e1d2db5c9f5a42193e03bbfd0514,2025-09-17 13:23:17

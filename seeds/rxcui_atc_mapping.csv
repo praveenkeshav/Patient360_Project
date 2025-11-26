@@ -1,0 +1,7 @@
+rxcui,generic_name,atc_code,atc_name,atc_level,atc_level_1,atc_level_2,atc_level_3,atc_level_4,atc_level_5,preferred,source_system,source_id,added_by,added_at,row_hash
+1049630,Metformin,A10BA02,Biguanides,5,A,A10,A10B,A10BA,A10BA02,TRUE,seed_upload,, ,2025-09-17 13:23:40,eb1394a0aaca0ac2483ed1341e79d026b6af95bc5e7aa67c3c66aa759fbd971d
+617314,Lisinopril,C09AA03,"ACE inhibitors, plain",5,C,C09,C09A,C09AA,C09AA03,TRUE,seed_upload,, ,2025-09-17 13:23:40,4202f24d94149d8c0abe80cd6fb3f9d34c554efcf757ef79e6629503ea3025b9
+197361,Furosemide,C03CA01,High-ceiling diuretics,5,C,C03,C03C,C03CA,C03CA01,TRUE,seed_upload,, ,2025-09-17 13:23:40,d77c4938141b2da64aa36f7f518f5ab6644e6782738855561972c2eec6b5e9cc
+617318,Albuterol,R03AC02,Selective beta-2-adrenoreceptor agonists,5,R,R03,R03A,R03AC,R03AC02,TRUE,seed_upload,, ,2025-09-17 13:23:40,3ac16a3b10a95794b4903bf5af45c8aea55072532b670a572ad2b602fa9764ea
+617321,Atorvastatin,C10AA05,HMG CoA reductase inhibitors,5,C,C10,C10A,C10AA,C10AA05,TRUE,seed_upload,, ,2025-09-17 13:23:40,5c771b99df55af933c1905bd06cb0030336143f4642ec32ab7e493923b67b89b
+198211,Insulin glargine,A10AE04,"Insulins and analogues for injection, long-acting",5,A,A10,A10A,A10AE,A10AE04,TRUE,seed_upload,, ,2025-09-17 13:23:40,0ce20dcaf560928bde09b6152ded53da2ff8221b89c7ccbef7916bec3c267b59
