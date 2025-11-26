@@ -1,11 +1,3 @@
-{{
-  config(
-    materialized = 'incremental',
-    unique_key = 'encounter_id',
-    tags = ["int", "encounters"]
-    )
-}}
-
 with
 
 src as (

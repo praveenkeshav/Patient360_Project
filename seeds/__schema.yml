@@ -176,3 +176,13 @@ seeds:
 
   - name: cpt_hcpcs_codes
     description: This seed file contains CPT/HCPCS codes and their descriptions for medical procedures and services
+  - name: atc_codes
+    description: This seed file contains ATC codes and their corresponding drug names
+  - name: atc_codes_flags
+    description: This seed file contains flags for ATC codes indicating specific attributes or classifications
+  - name: rxcui_atc_mapping
+    description: This seed file maps RxNorm Concept Unique Identifiers (RxCUIs) to their corresponding ATC codes
+  - name: providers
+    description: This seed file contains provider information including provider IDs and names
+  - name: ucum_units
+    description: This seed file contains UCUM (Unified Code for Units of Measure) units and their descriptions
