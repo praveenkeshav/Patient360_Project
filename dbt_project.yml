@@ -32,4 +32,6 @@ models:
       +required_tests: {"unique.*|not_null": 2}
       +materialized: view
     intermediate:
+      +materialized: table
+    marts:
       +materialized: table  
