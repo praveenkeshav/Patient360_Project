@@ -42,7 +42,6 @@ enc_with_patient as (
     from enc e
     left join {{ ref("dim_patients") }} dp
         on e.patient_id = dp.patient_id
-      and dp.is_current = 1      
 ),
 
 enc_with_provider as (
